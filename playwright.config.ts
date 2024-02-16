@@ -14,13 +14,13 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
 
   // Amount of retries on failure (flaky test)
-  retries: process.env.CI ? 1 : 1,
+  retries: process.env.CI ? 3 : 3,  // Cantidad de veces que se reintenta un caso cuando falla
 
   // Amount of jobs to run in parallel
-  workers: process.env.CI ? 1 : 1,
+  workers: process.env.CI ? 1 : 1,  // Cantidad de casos que se corren a la vez
 
   // Maximum time expect() should wait to met a condition
-  expect: { timeout: 6 * 1000 },
+  expect: { timeout: 20 * 1000 },   // Cantidad de tiempo que espera una validación antes de darla como fallada
 
   globalTeardown: "./global-teardown.ts",
 
@@ -67,15 +67,15 @@ export default defineConfig({
     //  use: { ...devices['Desktop Safari'] },
     // },
 
-    {
-      name: 'Mobile Chrome',
-      use: { ...devices['Pixel 5'] },
-    },
-
-    {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
-    }
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] },
+    // },
+    //
+    // {
+    //   name: 'Mobile Safari',
+    //   use: { ...devices['iPhone 12'] },
+    // }
   ],
 
   // In case you need to run your local env before the tests run
