@@ -10,4 +10,7 @@ test('@Smoke (B2B-TC-) Verificar que se puede loguear de forma exitosa con crede
     await test.step('Click en el boton Ingresar', async () => {
         await loginPage.endLoginProcess()
     })
+    await test.step('Click en el boton de VERIFICAR', async () => {
+        await loginPage.clickBotonActivarGeolocalizacion()
+    })
 })
