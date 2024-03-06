@@ -39,9 +39,11 @@ export class LoginPage extends BasePage {
         await this.click(this.BOTON_INGRESAR)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
+        // await this.page.waitForTimeout(10000)
     }
     async clickBotonActivarGeolocalizacion(): Promise<void> {
-        await this.page.waitForTimeout(10000)
+        await this.page.waitForLoadState("domcontentloaded")
+        // await this.page.waitForSelector("//section [@id='alertLocation']", {timeout: 10000})
         await this.click(this.BOTON_ACTIVAR)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
