@@ -9,7 +9,7 @@ export class LoginPage extends BasePage {
     readonly USUARIO: Locator
     readonly CONTRASENIA: Locator
     readonly BOTON_INGRESAR: Locator
-    readonly BOTON_ACTIVAR: Locator
+    readonly BOTON_ACTIVAR_GEOLOCALIZACION: Locator
 
     private env: any
 
@@ -22,7 +22,7 @@ export class LoginPage extends BasePage {
         this.USUARIO = this.page.getByPlaceholder('Usuario')
         this.CONTRASENIA = this.page.getByPlaceholder('Contraseña')
         this.BOTON_INGRESAR = this.page.locator("(//button[normalize-space()='Ingresar'])[1]")
-        this.BOTON_ACTIVAR = this.page.locator("(//button[normalize-space()='Activar'])[1]")
+        this.BOTON_ACTIVAR_GEOLOCALIZACION = this.page.locator("(//button[normalize-space()='Activar'])[1]")
     }
 
     async navigateToLoginPage(): Promise<void> {
@@ -44,7 +44,7 @@ export class LoginPage extends BasePage {
     async clickBotonActivarGeolocalizacion(): Promise<void> {
         await this.page.waitForLoadState("domcontentloaded")
         // await this.page.waitForSelector("//section [@id='alertLocation']", {timeout: 10000})
-        await this.click(this.BOTON_ACTIVAR)
+        await this.click(this.BOTON_ACTIVAR_GEOLOCALIZACION)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         // await this.page.waitForTimeout(3000)
