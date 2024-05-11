@@ -1,7 +1,7 @@
 {
-    "baseURL": "https://maxi-dev.wcorp.ar.carrefour.com/app/login",
-    "username": "mauricio_roh",
-    "password": "Mauri#Underc0de",
-    "identifierNumber": "96018290",
+    "baseURL": "https://tupedido.carrefour.com.ar/maxiPedidos/login/1",
+    "username": "cristian_morganti",
+    "password": "Underc0deQArmy",
+    "identifierNumber": "33462624",
     "storeNumber": "2"
 }

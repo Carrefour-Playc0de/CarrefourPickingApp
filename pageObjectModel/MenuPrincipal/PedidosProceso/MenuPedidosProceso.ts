@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuArmadoPedido extends BasePage {
+export class MenuPedidosProceso extends BasePage {
 
-    readonly ARMADO_PEDIDO: Locator
+    readonly PEDIDOS_PROCESO: Locator
 
     private env: any
 
@@ -12,17 +12,17 @@ export class MenuArmadoPedido extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ARMADO_PEDIDO = this.page.locator("((//div[@onclick=\"gotoPage('orders')\"])[1]")
+        this.PEDIDOS_PROCESO = this.page.locator("((//div[@onclick=\"gotoPage('orderInProcess')\"])[1]")
     }
 
-    async clickMenuArmadoPedido(): Promise<void> {
-        await this.click(this.ARMADO_PEDIDO)
+    async clickMenuPedidosProceso(): Promise<void> {
+        await this.click(this.PEDIDOS_PROCESO)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuArmadoPedido(): Promise<void> {
-        await this.clickMenuArmadoPedido()
+    async navigateToMenuPedidosProceso(): Promise<void> {
+        await this.clickMenuPedidosProceso()
     }
 }

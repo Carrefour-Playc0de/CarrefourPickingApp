@@ -2,9 +2,9 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuArmadoPedido extends BasePage {
+export class MenuImprimirComanda extends BasePage {
 
-    readonly ARMADO_PEDIDO: Locator
+    readonly IMPRIMIR_COMANDA: Locator
 
     private env: any
 
@@ -12,17 +12,17 @@ export class MenuArmadoPedido extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ARMADO_PEDIDO = this.page.locator("((//div[@onclick=\"gotoPage('orders')\"])[1]")
+        this.IMPRIMIR_COMANDA = this.page.locator("((//div[@onclick=\"gotoPage('print')\"])[1]")
     }
 
-    async clickMenuArmadoPedido(): Promise<void> {
-        await this.click(this.ARMADO_PEDIDO)
+    async clickMenuImprimirComanda(): Promise<void> {
+        await this.click(this.IMPRIMIR_COMANDA)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuArmadoPedido(): Promise<void> {
-        await this.clickMenuArmadoPedido()
+    async navigateToMenuImprimirComanda(): Promise<void> {
+        await this.clickMenuImprimirComanda()
     }
 }

@@ -1,4 +1,4 @@
-import test from '../../../config/testManager'
+import test from '../../config/testManager'
 
 test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     await test.step(`Navegar en el sitio`, async () => {
@@ -15,9 +15,9 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@Smoke @Regression (B2B-TC-54) Verificar que al clickear el boton Armado de Pedido funciona correctamente', async ({menuArmadoPedido}) => {
+test('@xyz @Smoke @Regression (B2B-TC-439) Verificar que al clickear el boton Cerrar Sesion la aplicacion se cierra correctamente', async ({menuCerrarSesion}) => {
 
-    await test.step('Click en Armado de Pedido', async () => {
-        await menuArmadoPedido.clickMenuArmadoPedido();
+    await test.step('Click en Cerrar Sesion', async () => {
+        await menuCerrarSesion.clickMenuCerrarSesion();
     })
 })

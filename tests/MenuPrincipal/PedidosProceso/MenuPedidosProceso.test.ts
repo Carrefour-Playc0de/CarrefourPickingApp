@@ -15,9 +15,9 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@Smoke @Regression (B2B-TC-54) Verificar que al clickear el boton Armado de Pedido funciona correctamente', async ({menuArmadoPedido}) => {
+test('@xyz @Smoke @Regression (B2B-TC-82) Verificar que al clickear el boton Pedidos en Proceso funciona correctamente', async ({menuPedidosProceso}) => {
 
-    await test.step('Click en Armado de Pedido', async () => {
-        await menuArmadoPedido.clickMenuArmadoPedido();
+    await test.step('Click en Pedidos en Proceso', async () => {
+        await menuPedidosProceso.clickMenuPedidosProceso();
     })
 })
