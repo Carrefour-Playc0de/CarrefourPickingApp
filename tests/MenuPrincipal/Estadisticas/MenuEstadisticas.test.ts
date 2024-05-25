@@ -15,7 +15,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@xyz @Smoke @Regression (B2B-TC-438) Verificar que al clickear el boton Estadisticas funciona correctamente', async ({menuEstadisticas}) => {
+test('@Smoke @Regression (B2B-TC-438) Verificar que al clickear el boton Estadisticas funciona correctamente', async ({menuEstadisticas}) => {
 
     await test.step('Click en Estadisticas', async () => {
         await menuEstadisticas.clickMenuEstadisticas();

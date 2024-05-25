@@ -15,7 +15,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@xyz @Smoke @Regression (BB2B-TC-87) Verificar que al clickear el boton Armados en Proceso funciona correctamente', async ({menuArmadosProceso}) => {
+test('@Smoke @Regression (BB2B-TC-87) Verificar que al clickear el boton Armados en Proceso funciona correctamente', async ({menuArmadosProceso}) => {
 
     await test.step('Click en Armados en Proceso', async () => {
         await menuArmadosProceso.clickMenuArmadosProceso();

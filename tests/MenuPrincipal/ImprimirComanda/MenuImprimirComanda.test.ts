@@ -15,7 +15,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@xyz @Smoke @Regression (B2B-TC-434) Verificar que al clickear el boton Imprimir Comanda funciona correctamente', async ({menuImprimirComanda}) => {
+test('@Smoke @Regression (B2B-TC-434) Verificar que al clickear el boton Imprimir Comanda funciona correctamente', async ({menuImprimirComanda}) => {
 
     await test.step('Click en Imprimir Comanda', async () => {
         await menuImprimirComanda.clickMenuImprimirComanda();

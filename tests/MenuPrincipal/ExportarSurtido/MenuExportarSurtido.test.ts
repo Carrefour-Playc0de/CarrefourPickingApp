@@ -15,7 +15,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@xyz @Smoke @Regression (B2B-TC-437) Verificar que al clickear el boton Exportar Surtido funciona correctamente', async ({menuExportraSurtido}) => {
+test('@Smoke @Regression (B2B-TC-437) Verificar que al clickear el boton Exportar Surtido funciona correctamente', async ({menuExportraSurtido}) => {
 
     await test.step('Click en Exportar Surtido', async () => {
         await menuExportraSurtido.clickMenuExportarSurtido();

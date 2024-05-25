@@ -1,5 +1,7 @@
 {
-    "baseURL": "https://your-website.url",
-    "username": "Underc0de",
-    "password": "@Underc0de"
+    "baseURL": "https://tupedido.carrefour.com.ar/maxiPedidos/login/1",
+    "username": "QA",
+    "password": "QA",
+    "identifierNumber": "96018290",
+    "storeNumber": "2"
 }

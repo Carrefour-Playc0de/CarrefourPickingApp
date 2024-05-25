@@ -15,7 +15,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@xyz @Smoke @Regression (B2B-TC-82) Verificar que al clickear el boton Pedidos en Proceso funciona correctamente', async ({menuPedidosProceso}) => {
+test('@Smoke @Regression (B2B-TC-82) Verificar que al clickear el boton Pedidos en Proceso funciona correctamente', async ({menuPedidosProceso}) => {
 
     await test.step('Click en Pedidos en Proceso', async () => {
         await menuPedidosProceso.clickMenuPedidosProceso();
