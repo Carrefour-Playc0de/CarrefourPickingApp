@@ -24,7 +24,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos, men
     })
 })
 
-test('@xyz @Regression @Pedido (B2B-TC-444) Verificar que en la seccion botones Crear Pedidos el boton Ofertas funciona correctamente', async ({menuCrearPedidosSectionButtonsOfertas}) => {
+test('@Regression @Pedido (B2B-TC-444) Verificar que en la seccion botones Crear Pedidos el boton Ofertas funciona correctamente', async ({menuCrearPedidosSectionButtonsOfertas}) => {
     await test.step('Click en el boton Ofertas', async () => {
         await menuCrearPedidosSectionButtonsOfertas.clickCrearPedidosSectionButtonsOfertas()
     })

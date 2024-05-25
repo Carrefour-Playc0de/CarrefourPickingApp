@@ -18,7 +18,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos}) =>
     })
 })
 
-test('@xyz @Regression @Pedido (B2B-TC-79) Verificar que funcione correctamente el boton Cancelar del modal Tipo de entrega de pedido Envio', async ({menuCrearPedidosBotonEnvio}) => {
+test('@Regression @Pedido (B2B-TC-79) Verificar que funcione correctamente el boton Cancelar del modal Tipo de entrega de pedido Envio', async ({menuCrearPedidosBotonEnvio}) => {
 
     await test.step('Click en el boton Envio', async () => {
         await menuCrearPedidosBotonEnvio.clickCrearPedidosBotonEnvio();

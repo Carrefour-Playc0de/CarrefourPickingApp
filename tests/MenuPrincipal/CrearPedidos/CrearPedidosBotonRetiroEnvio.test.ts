@@ -18,13 +18,13 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos}) =>
     })
 })
 
-test('@xyz @Regression @Pedido (B2B-TC-440) Verificar que al clickear el boton Retiro funciona correctamente', async ({menuCrearPedidosBotonRetiro}) => {
+test('@Regression @Pedido (B2B-TC-440) Verificar que al clickear el boton Retiro funciona correctamente', async ({menuCrearPedidosBotonRetiro}) => {
 
     await test.step('Click en el boton Retiro', async () => {
         await menuCrearPedidosBotonRetiro.clickCrearPedidosBotonRetiro();
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-441) Verificar que al clickear el boton Envio funciona correctamente', async ({menuCrearPedidosBotonEnvio}) => {
+test('@Regression @Pedido (B2B-TC-441) Verificar que al clickear el boton Envio funciona correctamente', async ({menuCrearPedidosBotonEnvio}) => {
 
     await test.step('Click em el boton Envio', async () => {
         await menuCrearPedidosBotonEnvio.clickCrearPedidosBotonEnvio();

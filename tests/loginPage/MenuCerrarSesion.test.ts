@@ -15,7 +15,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion}) => {
     })
 })
 
-test('@xyz @Smoke @Regression (B2B-TC-439) Verificar que al clickear el boton Cerrar Sesion la aplicacion se cierra correctamente', async ({menuCerrarSesion}) => {
+test('@Smoke @Regression (B2B-TC-439) Verificar que al clickear el boton Cerrar Sesion la aplicacion se cierra correctamente', async ({menuCerrarSesion}) => {
 
     await test.step('Click en Cerrar Sesion', async () => {
         await menuCerrarSesion.clickMenuCerrarSesion();

@@ -27,52 +27,52 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos, men
     })
 })
 
-test('@xyz @Regression @Pedido (B2B-TC-452) Verificar que en Crear Pedidos en Seccion el boton Almacen funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsAlmacen}) => {
+test('@Regression @Pedido (B2B-TC-452) Verificar que en Crear Pedidos en Seccion el boton Almacen funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsAlmacen}) => {
     await test.step('Click en el boton Almacen', async () => {
         await menuCrearPedidosSeccionSectionButtonsAlmacen.clickCrearPedidosSeccionSectionButtonsAlmacen()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-453) Verificar que en Crear Pedidos en Seccion el boton Bazar y Textil funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsBazarTextil}) => {
+test('@Regression @Pedido (B2B-TC-453) Verificar que en Crear Pedidos en Seccion el boton Bazar y Textil funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsBazarTextil}) => {
     await test.step('Click en el boton Bazar y Textil', async () => {
         await menuCrearPedidosSeccionSectionButtonsBazarTextil.clickCrearPedidosSeccionSectionButtonsBazarTextil()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-454) Verificar que en Crear Pedidos en Seccion el boton Bebidas funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsBebidas}) => {
+test('@Regression @Pedido (B2B-TC-454) Verificar que en Crear Pedidos en Seccion el boton Bebidas funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsBebidas}) => {
     await test.step('Click en el boton Bebidas', async () => {
         await menuCrearPedidosSeccionSectionButtonsBebidas.clickCrearPedidosSeccionSectionButtonsBebidas()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-455) Verificar que en Crear Pedidos en Seccion el boton Desayuno y Merienda funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsDesayunoMerienda}) => {
+test('@Regression @Pedido (B2B-TC-455) Verificar que en Crear Pedidos en Seccion el boton Desayuno y Merienda funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsDesayunoMerienda}) => {
     await test.step('Click en el boton Desayuno y Merienda', async () => {
         await menuCrearPedidosSeccionSectionButtonsDesayunoMerienda.clickCrearPedidosSeccionSectionButtonsDesayunoMerienda()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-456) Verificar que en Crear Pedidos en Seccion el boton Fruta y Verdura funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsFrutasVerduras}) => {
+test('@Regression @Pedido (B2B-TC-456) Verificar que en Crear Pedidos en Seccion el boton Fruta y Verdura funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsFrutasVerduras}) => {
     await test.step('Click en el boton Fruta y Verdura', async () => {
         await menuCrearPedidosSeccionSectionButtonsFrutasVerduras.clickMenuCrearPedidosSeccionSectionButtonsFrutasVerduras()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-457) Verificar que en Crear Pedidos en Seccion el boton Lacteos y Productos Frescos funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsLacteosProductosFrescos}) => {
+test('@Regression @Pedido (B2B-TC-457) Verificar que en Crear Pedidos en Seccion el boton Lacteos y Productos Frescos funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsLacteosProductosFrescos}) => {
     await test.step('Click en el boton Lacteos y Productos Frescos', async () => {
         await menuCrearPedidosSeccionSectionButtonsLacteosProductosFrescos.clickCrearPedidosSeccionSectionButtonsLacteosProductosFrescos()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-458) Verificar que en Crear Pedidos en Seccion el boton Limpieza funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsLimpieza}) => {
+test('@Regression @Pedido (B2B-TC-458) Verificar que en Crear Pedidos en Seccion el boton Limpieza funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsLimpieza}) => {
     await test.step('Click en el boton Limpieza', async () => {
         await menuCrearPedidosSeccionSectionButtonsLimpieza.clickMenuCrearPedidosSeccionSectionButtonsLimpieza()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-459) Verificar que en Crear Pedidos en Seccion el boton Mundo Bebé funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsMundoBebe}) => {
+test('@Regression @Pedido (B2B-TC-459) Verificar que en Crear Pedidos en Seccion el boton Mundo Bebé funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsMundoBebe}) => {
     await test.step('Click en el boton Mundo Bebé', async () => {
         await menuCrearPedidosSeccionSectionButtonsMundoBebe.clickCrearPedidosSeccionSectionButtonsMundoBebe()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-460) Verificar que en Crear Pedidos en Seccion el boton Panaderia funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsPanaderia}) => {
+test('@Regression @Pedido (B2B-TC-460) Verificar que en Crear Pedidos en Seccion el boton Panaderia funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsPanaderia}) => {
     await test.step('Click en el boton Panaderia', async () => {
         await menuCrearPedidosSeccionSectionButtonsPanaderia.clickCrearPedidosSeccionSectionButtonsPanaderia()
     })
 })
-test('@xyz @Regression @Pedido (B2B-TC-461) Verificar que en Crear Pedidos en Seccion el boton Perfumeria funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsPerfumeria}) => {
+test('@Regression @Pedido (B2B-TC-461) Verificar que en Crear Pedidos en Seccion el boton Perfumeria funciona correctamente', async ({menuCrearPedidosSeccionSectionButtonsPerfumeria}) => {
     await test.step('Click en el boton Perfumeria', async () => {
         await menuCrearPedidosSeccionSectionButtonsPerfumeria.clickCrearPedidosSeccionSectionButtonsPerfumeria()
     })

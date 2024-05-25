@@ -24,7 +24,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos, men
     })
 })
 
-test('@xyz @Regression @Pedido (B2B-TC-445) Verificar que en la seccion botones Crear Pedidos el boton Favoritos funciona correctamente', async ({menuCrearPedidosSectionButtonsFavoritos}) => {
+test('@Regression @Pedido (B2B-TC-445) Verificar que en la seccion botones Crear Pedidos el boton Favoritos funciona correctamente', async ({menuCrearPedidosSectionButtonsFavoritos}) => {
     await test.step('Click en el boton Favoritos', async () => {
         await menuCrearPedidosSectionButtonsFavoritos.clickCrearPedidosSectionButtonsFavoritos()
     })

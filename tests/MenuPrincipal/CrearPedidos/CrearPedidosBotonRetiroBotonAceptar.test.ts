@@ -18,7 +18,7 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos}) =>
     })
 })
 
-test('@xyz @Regression @Pedido (B2B-TC-81) Verificar que funcione correctamente el boton Aceptar del modal Tipo de entrega de pedido Retiro', async ({menuCrearPedidosBotonRetiro}) => {
+test('@Regression @Pedido (B2B-TC-81) Verificar que funcione correctamente el boton Aceptar del modal Tipo de entrega de pedido Retiro', async ({menuCrearPedidosBotonRetiro}) => {
 
     await test.step('Click en el boton Retiro', async () => {
         await menuCrearPedidosBotonRetiro.clickCrearPedidosBotonRetiro();

@@ -163,6 +163,8 @@ const test = baseTest.extend<{
     },
 
 
+
+
     // CREAR PEDIDOS - CATEGORIAS
     menuCrearPedidosSectionButtonsCategorias: async ({ page, context }, use) => {
         await use(new MenuCrearPedidosSectionButtonsCategorias(page, context, environment))
@@ -191,9 +193,6 @@ const test = baseTest.extend<{
     mCPCategorySectionButtonsAutomotor: async ({ page, context }, use) => {
         await use(new MCPCategorySectionButtonsAutomotor(page, context, environment))
     },
-
-
-
     mCPCategorySectionButtonsAzucarEndulzantes: async ({ page, context }, use) => {
         await use(new MCPCategorySectionButtonsAzucarEndulzantes(page, context, environment))
     },
