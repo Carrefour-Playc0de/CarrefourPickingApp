@@ -2,7 +2,7 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../../../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../../../../config/configLoader'
 
-export class MenuCrearPedidosSeccionSectionButtonsFrutasVerduras extends BasePage {
+export class MCPCategorySectionButtonsGaseosas extends BasePage {
 
     readonly BOTON: Locator
 
@@ -12,16 +12,16 @@ export class MenuCrearPedidosSeccionSectionButtonsFrutasVerduras extends BasePag
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.BOTON = this.page.locator("//*[@data-itemname='frutas y verduras']")
+        this.BOTON = this.page.locator("//*[@data-itemname='gaseosas']")
     }
 
-    async clickMenuCrearPedidosSeccionSectionButtonsFrutasVerduras(): Promise<void> {
+    async clickMCPCategorySectionButtonsGaseosas(): Promise<void> {
         await this.click(this.BOTON)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
     }
 
-    async navigateToMenuCrearPedidosSeccionSectionButtonsFrutasVerduras(): Promise<void> {
-        await this.clickMenuCrearPedidosSeccionSectionButtonsFrutasVerduras()
+    async navigateToMCPCategorySectionButtonsGaseosas(): Promise<void> {
+        await this.clickMCPCategorySectionButtonsGaseosas()
     }
 }

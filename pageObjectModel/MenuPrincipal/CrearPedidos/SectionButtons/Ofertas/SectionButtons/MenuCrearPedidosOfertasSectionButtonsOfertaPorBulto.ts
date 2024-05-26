@@ -19,7 +19,6 @@ export class MenuCrearPedidosOfertasSectionButtonsOfertaPorBulto extends BasePag
         await this.click(this.BOTON)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuCrearPedidosOfertasSectionButtonsOfertaPorBulto(): Promise<void> {
