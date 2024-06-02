@@ -1,15 +1,6 @@
 import test from '../../../../../config/testManager'
-import {
-    MCPCategorySectionButtonsAutomotor
-} from '../../../../../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsAutomotor'
-import {
-    MCPCategorySectionButtonsAceitesVinagres
-} from '../../../../../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsAceitesVinagres'
-import {
-    MCPCategorySectionButtonsAguas
-} from '../../../../../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsAguas'
 
-test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos, menuCrearPedidosBotonEnvio, menuCrearPedidosBotonAceptar, menuCrearPedidosSectionButtonsCategorias}) => {
+test.beforeEach(async ({loginPage, activarGeolocalizacion, menuNuevoPedidos, menuCrearPedidosBotonEnvio, menuCrearPedidosBotonAceptar, menuCrearPedidosSectionButtonsCategorias}) => {
     await test.step(`Navegar en el sitio`, async () => {
         await loginPage.navigateToLoginPage()
     })
@@ -22,8 +13,8 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos, men
     await test.step('Click en el boton de VERIFICAR', async () => {
         await activarGeolocalizacion.clickBotonActivarGeolocalizacion()
     })
-    await test.step('Click en Crear Pedidos', async () => {
-        await menuCrearPedidos.clickMenuCrearPedidos();
+    await test.step('Click en Nuevo Pedido', async () => {
+        await menuNuevoPedidos.clickNuevoPedidos();
     })
     await test.step('Click en el boton Envio', async () => {
         await menuCrearPedidosBotonEnvio.clickCrearPedidosBotonEnvio();
@@ -241,22 +232,148 @@ test('@Regression @Pedido (B2B-TC-509) Verificar que en Crear Pedidos en Categor
         await mCPCategorySectionButtonsJugos.clickMCPCategorySectionButtonsJugos()
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+test('@Regression @Pedido (B2B-TC-510) Verificar que en Crear Pedidos en Categoria el boton Lavandinas funciona correctamente', async ({mCPCategorySectionButtonsLavandinas}) => {
+    await test.step('Click en el boton Lavandinas', async () => {
+        await mCPCategorySectionButtonsLavandinas.clickMCPCategorySectionButtonsLavandinas()
+    })
+})
+test('@Regression @Pedido (B2B-TC-511) Verificar que en Crear Pedidos en Categoria el boton Leches funciona correctamente', async ({mCPCategorySectionButtonsLeches}) => {
+    await test.step('Click en el boton Leches', async () => {
+        await mCPCategorySectionButtonsLeches.clickMCPCategorySectionButtonsLeches()
+    })
+})
+test('@Regression @Pedido (B2B-TC-512) Verificar que en Crear Pedidos en Categoria el boton Leches en Polvo y Larga Vida funciona correctamente', async ({mCPCategorySectionButtonsLechesPolLarVida}) => {
+    await test.step('Click en el boton Leches en Polvo y Larga Vida', async () => {
+        await mCPCategorySectionButtonsLechesPolLarVida.clickMCPCategorySectionButtonsLechesPolLarVida()
+    })
+})
+test('@Regression @Pedido (B2B-TC-513) Verificar que en Crear Pedidos en Categoria el boton Libreria funciona correctamente', async ({mCPCategorySectionButtonsLibreria}) => {
+    await test.step('Click en el boton LLibreria', async () => {
+        await mCPCategorySectionButtonsLibreria.clickMCPCategorySectionButtonsLibreria()
+    })
+})
+test('@Regression @Pedido (B2B-TC-514) Verificar que en Crear Pedidos en Categoria el boton Limpieza de Banio funciona correctamente', async ({mCPCategorySectionButtonsLimpiezaBanio}) => {
+    await test.step('Click en el boton Limpieza de Banio', async () => {
+        await mCPCategorySectionButtonsLimpiezaBanio.clickMCPCategorySectionButtonsLimpiezaBanio()
+    })
+})
+test('@Regression @Pedido (B2B-TC-515) Verificar que en Crear Pedidos en Categoria el boton Limpieza de Cocina funciona correctamente', async ({mCPCategorySectionButtonsLimpiezaCocina}) => {
+    await test.step('Click en el boton Limpieza de Cocina', async () => {
+        await mCPCategorySectionButtonsLimpiezaCocina.clickMCPCategorySectionButtonsLimpiezaCocina()
+    })
+})
+test('@Regression @Pedido (B2B-TC-516) Verificar que en Crear Pedidos en Categoria el boton Limpieza de la Ropa funciona correctamente', async ({mCPCategorySectionButtonsLimpiezaRopa}) => {
+    await test.step('Click en el boton Limpieza de la Ropa', async () => {
+        await mCPCategorySectionButtonsLimpiezaRopa.clickMCPCategorySectionButtonsLimpiezaRopa()
+    })
+})
+test('@Regression @Pedido (B2B-TC-517) Verificar que en Crear Pedidos en Categoria el boton Limpieza de Pisos y Muebles funciona correctamente', async ({mCPCategorySectionButtonsLimpiezaPisosMuebles}) => {
+    await test.step('Click en el boton Limpieza de Pisos y Muebles', async () => {
+        await mCPCategorySectionButtonsLimpiezaPisosMuebles.clickMCPCategorySectionButtonsLimpiezaPisosMuebles()
+    })
+})
+test('@Regression @Pedido (B2B-TC-518) Verificar que en Crear Pedidos en Categoria el boton Mantecas Margarinas y Levaduras funciona correctamente', async ({mCPCategorySectionButtonsManteMargariLevaduras}) => {
+    await test.step('Click en el boton Mantecas Margarinas y Levaduras', async () => {
+        await mCPCategorySectionButtonsManteMargariLevaduras.clickMCPCategorySectionButtonsManteMargariLevaduras()
+    })
+})
+test('@Regression @Pedido (B2B-TC-519) Verificar que en Crear Pedidos en Categoria el boton Mermeladas y otros Dulces funciona correctamente', async ({mCPCategorySectionButtonsMermeOtrosDulces}) => {
+    await test.step('Click en el boton Mermeladas y otros Dulces', async () => {
+        await mCPCategorySectionButtonsMermeOtrosDulces.clickMCPCategorySectionButtonsMermeOtrosDulces()
+    })
+})
+test('@Regression @Pedido (B2B-TC-520) Verificar que en Crear Pedidos en Categoria el boton P.A.S. funciona correctamente', async ({mCPCategorySectionButtonsPAS}) => {
+    await test.step('Click en el boton P.A.S.', async () => {
+        await mCPCategorySectionButtonsPAS.clickMCPCategorySectionButtonsPAS()
+    })
+})
+test('@Regression @Pedido (B2B-TC-521) Verificar que en Crear Pedidos en Categoria el boton Pan Rallado y Rebozadores funciona correctamente', async ({mCPCategorySectionButtonsPanRalladoRebozadores}) => {
+    await test.step('Click en el boton Pan Rallado y Rebozadores', async () => {
+        await mCPCategorySectionButtonsPanRalladoRebozadores.clickMCPCategorySectionButtonsPanRalladoRebozadores()
+    })
+})
+test('@Regression @Pedido (B2B-TC-522) Verificar que en Crear Pedidos en Categoria el boton Paniales funciona correctamente', async ({mCPCategorySectionButtonsPaniales}) => {
+    await test.step('Click en el boton Paniales', async () => {
+        await mCPCategorySectionButtonsPaniales.clickMCPCategorySectionButtonsPaniales()
+    })
+})
+test('@Regression @Pedido (B2B-TC-523) Verificar que en Crear Pedidos en Categoria el boton Panificados funciona correctamente', async ({mCPCategorySectionButtonsPanificados}) => {
+    await test.step('Click en el boton Panificados', async () => {
+        await mCPCategorySectionButtonsPanificados.clickMCPCategorySectionButtonsPanificados()
+    })
+})
+test('@Regression @Pedido (B2B-TC-524) Verificar que en Crear Pedidos en Categoria el boton Papeles Higienicos funciona correctamente', async ({mCPCategorySectionButtonsPapelesHigienicos}) => {
+    await test.step('Click en el boton Papeles Higienicos', async () => {
+        await mCPCategorySectionButtonsPapelesHigienicos.clickMCPCategorySectionButtonsPapelesHigienicos()
+    })
+})
+test('@Regression @Pedido (B2B-TC-525) Verificar que en Crear Pedidos en Categoria el boton Para el Banio funciona correctamente', async ({mCPCategorySectionButtonsParaBanio}) => {
+    await test.step('Click en el boton Para el Banio', async () => {
+        await mCPCategorySectionButtonsParaBanio.clickMCPCategorySectionButtonsParaBanio()
+    })
+})
+test('@Regression @Pedido (B2B-TC-526) Verificar que en Crear Pedidos en Categoria el boton Pastas Secas funciona correctamente', async ({mCPCategorySectionButtonsPastasSecas}) => {
+    await test.step('Click en el boton Pastas Secas', async () => {
+        await mCPCategorySectionButtonsPastasSecas.clickMCPCategorySectionButtonsPastasSecas()
+    })
+})
+test('@Regression @Pedido (B2B-TC-527) Verificar que en Crear Pedidos en Categoria el boton Proteccion Femenina funciona correctamente', async ({mCPCategorySectionButtonsProteccionFemenina}) => {
+    await test.step('Click en el boton Proteccion Femenina', async () => {
+        await mCPCategorySectionButtonsProteccionFemenina.clickMCPCategorySectionButtonsProteccionFemenina()
+    })
+})
+test('@Regression @Pedido (B2B-TC-528) Verificar que en Crear Pedidos en Categoria el boton Proteccion para Adultos funciona correctamente', async ({mCPCategorySectionButtonsProteccionAdultos}) => {
+    await test.step('Click en el boton Proteccion para Adultos', async () => {
+        await mCPCategorySectionButtonsProteccionAdultos.clickMCPCategorySectionButtonsProteccionAdultos()
+    })
+})
+test('@Regression @Pedido (B2B-TC-529) Verificar que en Crear Pedidos en Categoria el boton Quesos funciona correctamente', async ({mCPCategorySectionButtonsQuesos}) => {
+    await test.step('Click en el boton Quesos', async () => {
+        await mCPCategorySectionButtonsQuesos.clickMCPCategorySectionButtonsQuesos()
+    })
+})
+test('@Regression @Pedido (B2B-TC-530) Verificar que en Crear Pedidos en Categoria el boton Repelentes funciona correctamente', async ({mCPCategorySectionButtonsRepelentes}) => {
+    await test.step('Click en el boton Repelentes', async () => {
+        await mCPCategorySectionButtonsRepelentes.clickMCPCategorySectionButtonsRepelentes()
+    })
+})
+test('@Regression @Pedido (B2B-TC-531) Verificar que en Crear Pedidos en Categoria el boton Reposteria y Postres funciona correctamente', async ({mCPCategorySectionButtonsReposteriaPostres}) => {
+    await test.step('Click en el boton Reposteria y Postres', async () => {
+        await mCPCategorySectionButtonsReposteriaPostres.clickMCPCategorySectionButtonsReposteriaPostres()
+    })
+})
+test('@Regression @Pedido (B2B-TC-532) Verificar que en Crear Pedidos en Categoria el boton Rollos de Cocina y Servilletas funciona correctamente', async ({mCPCategorySectionButtonsRollosCocinaServilletas}) => {
+    await test.step('Click en el boton Rollos de Cocina y Servilletas', async () => {
+        await mCPCategorySectionButtonsRollosCocinaServilletas.clickMCPCategorySectionButtonsRollosCocinaServilletas()
+    })
+})
+test('@Regression @Pedido (B2B-TC-533) Verificar que en Crear Pedidos en Categoria el boton Sal Aderezos y Saborizadores funciona correctamente', async ({mCPCategorySectionButtonsSalAdereSaborizadores}) => {
+    await test.step('Click en el boton Sal Aderezos y Saborizadores', async () => {
+        await mCPCategorySectionButtonsSalAdereSaborizadores.clickMCPCategorySectionButtonsSalAdereSaborizadores()
+    })
+})
+test('@Regression @Pedido (B2B-TC-534) Verificar que en Crear Pedidos en Categoria el boton Seco funciona correctamente', async ({mCPCategorySectionButtonsSeco}) => {
+    await test.step('Click en el boton Seco', async () => {
+        await mCPCategorySectionButtonsSeco.clickMCPCategorySectionButtonsSeco()
+    })
+})
+test('@Regression @Pedido (B2B-TC-535) Verificar que en Crear Pedidos en Categoria el boton Snacks funciona correctamente', async ({mCPCategorySectionButtonsSnacks}) => {
+    await test.step('Click en el boton Snacks', async () => {
+        await mCPCategorySectionButtonsSnacks.clickMCPCategorySectionButtonsSnacks()
+    })
+})
+test('@Regression @Pedido (B2B-TC-536) Verificar que en Crear Pedidos en Categoria el boton Toallitas Humedas funciona correctamente', async ({mCPCategorySectionButtonsToallitasHumedas}) => {
+    await test.step('Click en el boton Toallitas Humedas', async () => {
+        await mCPCategorySectionButtonsToallitasHumedas.clickMCPCategorySectionButtonsToallitasHumedas()
+    })
+})
+test('@Regression @Pedido (B2B-TC-537) Verificar que en Crear Pedidos en Categoria el boton Vinos funciona correctamente', async ({mCPCategorySectionButtonsVinos}) => {
+    await test.step('Click en el boton Vinos', async () => {
+        await mCPCategorySectionButtonsVinos.clickMCPCategorySectionButtonsVinos()
+    })
+})
+test('@Regression @Pedido (B2B-TC-538) Verificar que en Crear Pedidos en Categoria el boton Yerba funciona correctamente', async ({mCPCategorySectionButtonsYerba}) => {
+    await test.step('Click en el boton Yerba', async () => {
+        await mCPCategorySectionButtonsYerba.clickMCPCategorySectionButtonsYerba()
+    })
+})

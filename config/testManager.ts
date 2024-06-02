@@ -11,7 +11,7 @@ import { MenuArmadosProceso } from '../pageObjectModel/MenuPrincipal/ArmadosProc
 import { MenuConsultarPedidos } from '../pageObjectModel/MenuPrincipal/ConsultarPedidos/MenuConsultarPedidos'
 import { MenuExportraSurtido } from '../pageObjectModel/MenuPrincipal/ExportarSurtido/MenuExportarSurtido'
 import { MenuEstadisticas } from '../pageObjectModel/MenuPrincipal/Estadisticas/MenuEstadisticas'
-import { MenuCrearPedidos } from '../pageObjectModel/MenuPrincipal/CrearPedidos/MenuCrearPedidos'
+import { MenuNuevoPedidos } from '../pageObjectModel/MenuPrincipal/CrearPedidos/MenuNuevoPedidos'
 import { MenuCerrarSesion } from '../pageObjectModel/LoginPage/MenuCerrarSesion'
 import { MenuCrearPedidosBotonRetiro } from '../pageObjectModel/MenuPrincipal/CrearPedidos/MenuCrearPedidosBotonRetiro'
 import { MenuCrearPedidosBotonEnvio } from '../pageObjectModel/MenuPrincipal/CrearPedidos/MenuCrearPedidosBotonEnvio'
@@ -199,6 +199,94 @@ import {
 import {
     MCPCategorySectionButtonsJugos
 } from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsJugos'
+import {
+    MCPCategorySectionButtonsLavandinas
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLavandinas'
+import {
+    MCPCategorySectionButtonsLeches
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLeches'
+import {
+    MCPCategorySectionButtonsLechesPolLarVida
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLechesPolLarVida'
+import {
+    MCPCategorySectionButtonsLibreria
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLibreria'
+import {
+    MCPCategorySectionButtonsLimpiezaBanio
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLimpiezaBanio'
+import {
+    MCPCategorySectionButtonsLimpiezaCocina
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLimpiezaCocina'
+import {
+    MCPCategorySectionButtonsLimpiezaRopa
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLimpiezaRopa'
+import {
+    MCPCategorySectionButtonsLimpiezaPisosMuebles
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsLimpiezaPisosMuebles'
+import {
+    MCPCategorySectionButtonsManteMargariLevaduras
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsManteMargariLevaduras'
+import {
+    MCPCategorySectionButtonsMermeOtrosDulces
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsMermeOtrosDulces'
+import {
+    MCPCategorySectionButtonsPAS
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsPAS'
+import {
+    MCPCategorySectionButtonsPanRalladoRebozadores
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsPanRalladoRebozadores'
+import {
+    MCPCategorySectionButtonsPaniales
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsPaniales'
+import {
+    MCPCategorySectionButtonsPanificados
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsPanificados'
+import {
+    MCPCategorySectionButtonsPapelesHigienicos
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsPapelesHigienicos'
+import {
+    MCPCategorySectionButtonsParaBanio
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsParaBanio'
+import {
+    MCPCategorySectionButtonsPastasSecas
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsPastasSecas'
+import {
+    MCPCategorySectionButtonsProteccionFemenina
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsProteccionFemenina'
+import {
+    MCPCategorySectionButtonsProteccionAdultos
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsProteccionAdultos'
+import {
+    MCPCategorySectionButtonsQuesos
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsQuesos'
+import {
+    MCPCategorySectionButtonsRepelentes
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsRepelentes'
+import {
+    MCPCategorySectionButtonsReposteriaPostres
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsReposteriaPostres'
+import {
+    MCPCategorySectionButtonsRollosCocinaServilletas
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsRollosCocinaServilletas'
+import {
+    MCPCategorySectionButtonsSalAdereSaborizadores
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsSalAdereSaborizadores'
+import {
+    MCPCategorySectionButtonsSeco
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsSeco'
+import {
+    MCPCategorySectionButtonsSnacks
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsSnacks'
+import {
+    MCPCategorySectionButtonsToallitasHumedas
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsToallitasHumedas'
+import {
+    MCPCategorySectionButtonsVinos
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsVinos'
+import {
+    MCPCategorySectionButtonsYerba
+} from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsYerba'
+
 
 const environment = process.env.TEST || 'qa'
 
@@ -213,7 +301,7 @@ const test = baseTest.extend<{
     menuConsultarPedidos: MenuConsultarPedidos
     menuExportraSurtido: MenuExportraSurtido
     menuEstadisticas:MenuEstadisticas
-    menuCrearPedidos: MenuCrearPedidos
+    menuNuevoPedidos: MenuNuevoPedidos
     menuCerrarSesion: MenuCerrarSesion
     menuCrearPedidosBotonRetiro: MenuCrearPedidosBotonRetiro
     menuCrearPedidosBotonEnvio: MenuCrearPedidosBotonEnvio
@@ -278,6 +366,35 @@ const test = baseTest.extend<{
     mCPCategorySectionButtonsInsecticidas: MCPCategorySectionButtonsInsecticidas
     mCPCategorySectionButtonsJabones: MCPCategorySectionButtonsJabones
     mCPCategorySectionButtonsJugos: MCPCategorySectionButtonsJugos
+    mCPCategorySectionButtonsLavandinas :MCPCategorySectionButtonsLavandinas
+    mCPCategorySectionButtonsLeches: MCPCategorySectionButtonsLeches
+    mCPCategorySectionButtonsLechesPolLarVida: MCPCategorySectionButtonsLechesPolLarVida
+    mCPCategorySectionButtonsLibreria: MCPCategorySectionButtonsLibreria
+    mCPCategorySectionButtonsLimpiezaBanio: MCPCategorySectionButtonsLimpiezaBanio
+    mCPCategorySectionButtonsLimpiezaCocina :MCPCategorySectionButtonsLimpiezaCocina
+    mCPCategorySectionButtonsLimpiezaRopa: MCPCategorySectionButtonsLimpiezaRopa
+    mCPCategorySectionButtonsLimpiezaPisosMuebles: MCPCategorySectionButtonsLimpiezaPisosMuebles
+    mCPCategorySectionButtonsManteMargariLevaduras: MCPCategorySectionButtonsManteMargariLevaduras
+    mCPCategorySectionButtonsMermeOtrosDulces: MCPCategorySectionButtonsMermeOtrosDulces
+    mCPCategorySectionButtonsPAS: MCPCategorySectionButtonsPAS
+    mCPCategorySectionButtonsPanRalladoRebozadores: MCPCategorySectionButtonsPanRalladoRebozadores
+    mCPCategorySectionButtonsPaniales: MCPCategorySectionButtonsPaniales
+    mCPCategorySectionButtonsPanificados: MCPCategorySectionButtonsPanificados
+    mCPCategorySectionButtonsPapelesHigienicos: MCPCategorySectionButtonsPapelesHigienicos
+    mCPCategorySectionButtonsParaBanio: MCPCategorySectionButtonsParaBanio
+    mCPCategorySectionButtonsPastasSecas: MCPCategorySectionButtonsPastasSecas
+    mCPCategorySectionButtonsProteccionFemenina: MCPCategorySectionButtonsProteccionFemenina
+    mCPCategorySectionButtonsProteccionAdultos: MCPCategorySectionButtonsProteccionAdultos
+    mCPCategorySectionButtonsQuesos: MCPCategorySectionButtonsQuesos
+    mCPCategorySectionButtonsRepelentes: MCPCategorySectionButtonsRepelentes
+    mCPCategorySectionButtonsReposteriaPostres: MCPCategorySectionButtonsReposteriaPostres
+    mCPCategorySectionButtonsRollosCocinaServilletas: MCPCategorySectionButtonsRollosCocinaServilletas
+    mCPCategorySectionButtonsSalAdereSaborizadores: MCPCategorySectionButtonsSalAdereSaborizadores
+    mCPCategorySectionButtonsSeco: MCPCategorySectionButtonsSeco
+    mCPCategorySectionButtonsSnacks: MCPCategorySectionButtonsSnacks
+    mCPCategorySectionButtonsToallitasHumedas:MCPCategorySectionButtonsToallitasHumedas
+    mCPCategorySectionButtonsVinos:MCPCategorySectionButtonsVinos
+    mCPCategorySectionButtonsYerba: MCPCategorySectionButtonsYerba
 
 }>({
     loginPage: async ({ page, context }, use) => {
@@ -291,9 +408,8 @@ const test = baseTest.extend<{
     },
 
 
-    mCPCategorySectionButtonsJugos: async ({ page, context }, use) => {
-        await use(new MCPCategorySectionButtonsJugos(page, context, environment))
-    },
+
+
 
 
 
@@ -422,6 +538,96 @@ const test = baseTest.extend<{
     mCPCategorySectionButtonsJabones: async ({ page, context }, use) => {
         await use(new MCPCategorySectionButtonsJabones(page, context, environment))
     },
+    mCPCategorySectionButtonsJugos: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsJugos(page, context, environment))
+    },
+    mCPCategorySectionButtonsLavandinas: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLavandinas(page, context, environment))
+    },
+    mCPCategorySectionButtonsLeches: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLeches(page, context, environment))
+    },
+    mCPCategorySectionButtonsLechesPolLarVida: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLechesPolLarVida(page, context, environment))
+    },
+    mCPCategorySectionButtonsLibreria: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLibreria(page, context, environment))
+    },
+    mCPCategorySectionButtonsLimpiezaBanio: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLimpiezaBanio(page, context, environment))
+    },
+    mCPCategorySectionButtonsLimpiezaCocina: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLimpiezaCocina(page, context, environment))
+    },
+    mCPCategorySectionButtonsLimpiezaRopa: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLimpiezaRopa(page, context, environment))
+    },
+    mCPCategorySectionButtonsLimpiezaPisosMuebles: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsLimpiezaPisosMuebles(page, context, environment))
+    },
+    mCPCategorySectionButtonsManteMargariLevaduras: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsManteMargariLevaduras(page, context, environment))
+    },
+    mCPCategorySectionButtonsMermeOtrosDulces: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsMermeOtrosDulces(page, context, environment))
+    },
+    mCPCategorySectionButtonsPAS: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsPAS(page, context, environment))
+    },
+    mCPCategorySectionButtonsPanRalladoRebozadores: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsPanRalladoRebozadores(page, context, environment))
+    },
+    mCPCategorySectionButtonsPaniales: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsPaniales(page, context, environment))
+    },
+    mCPCategorySectionButtonsPanificados: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsPanificados(page, context, environment))
+    },
+    mCPCategorySectionButtonsPapelesHigienicos: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsPapelesHigienicos(page, context, environment))
+    },
+    mCPCategorySectionButtonsParaBanio: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsParaBanio(page, context, environment))
+    },
+    mCPCategorySectionButtonsPastasSecas: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsPastasSecas(page, context, environment))
+    },
+    mCPCategorySectionButtonsProteccionFemenina: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsProteccionFemenina(page, context, environment))
+    },
+    mCPCategorySectionButtonsProteccionAdultos: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsProteccionAdultos(page, context, environment))
+    },
+    mCPCategorySectionButtonsQuesos: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsQuesos(page, context, environment))
+    },
+    mCPCategorySectionButtonsRepelentes: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsRepelentes(page, context, environment))
+    },
+    mCPCategorySectionButtonsReposteriaPostres: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsReposteriaPostres(page, context, environment))
+    },
+    mCPCategorySectionButtonsRollosCocinaServilletas: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsRollosCocinaServilletas(page, context, environment))
+    },
+    mCPCategorySectionButtonsSalAdereSaborizadores: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsSalAdereSaborizadores(page, context, environment))
+    },
+    mCPCategorySectionButtonsSeco: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsSeco(page, context, environment))
+    },
+    mCPCategorySectionButtonsSnacks: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsSnacks(page, context, environment))
+    },
+    mCPCategorySectionButtonsToallitasHumedas: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsToallitasHumedas(page, context, environment))
+    },
+    mCPCategorySectionButtonsVinos: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsVinos(page, context, environment))
+    },
+    mCPCategorySectionButtonsYerba: async ({ page, context }, use) => {
+        await use(new MCPCategorySectionButtonsYerba(page, context, environment))
+    },
 
 
 
@@ -530,8 +736,8 @@ const test = baseTest.extend<{
     menuEstadisticas: async ({ page, context }, use) => {
         await use(new MenuEstadisticas(page, context, environment))
     },
-    menuCrearPedidos: async ({ page, context }, use) => {
-        await use(new MenuCrearPedidos(page, context, environment))
+    menuNuevoPedidos: async ({ page, context }, use) => {
+        await use(new MenuNuevoPedidos(page, context, environment))
     },
 
 

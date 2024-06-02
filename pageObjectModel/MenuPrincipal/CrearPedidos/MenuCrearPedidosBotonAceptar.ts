@@ -19,7 +19,6 @@ export class MenuCrearPedidosBotonAceptar extends BasePage {
         await this.click(this.BOTON_ACEPTAR)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuCrearPedidosBotonAceptar(): Promise<void> {

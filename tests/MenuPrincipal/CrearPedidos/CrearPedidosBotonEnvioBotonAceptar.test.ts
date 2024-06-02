@@ -1,6 +1,6 @@
 import test from '../../../config/testManager'
 
-test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos}) => {
+test.beforeEach(async ({loginPage, activarGeolocalizacion, menuNuevoPedidos}) => {
     await test.step(`Navegar en el sitio`, async () => {
         await loginPage.navigateToLoginPage()
     })
@@ -13,8 +13,8 @@ test.beforeEach(async ({loginPage, activarGeolocalizacion, menuCrearPedidos}) =>
     await test.step('Click en el boton de VERIFICAR', async () => {
         await activarGeolocalizacion.clickBotonActivarGeolocalizacion()
     })
-    await test.step('Click en Crear Pedidos', async () => {
-        await menuCrearPedidos.clickMenuCrearPedidos();
+    await test.step('Click en Nuevo Pedido', async () => {
+        await menuNuevoPedidos.clickNuevoPedidos();
     })
 })
 

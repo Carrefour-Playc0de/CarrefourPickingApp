@@ -2,7 +2,7 @@ import { Page, BrowserContext, Locator, expect } from '@playwright/test'
 import { BasePage } from '../../commonActions'
 import { loadEnvironmentConfig, loadTestDataConfig } from '../../../config/configLoader'
 
-export class MenuCrearPedidos extends BasePage {
+export class MenuNuevoPedidos extends BasePage {
 
     readonly CREAR_PEDIDOS: Locator
 
@@ -12,17 +12,17 @@ export class MenuCrearPedidos extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.CREAR_PEDIDOS = this.page.locator("(//div[@onclick=\"btnOpenModal('alertNewOrder')\"])[1]")
+        this.CREAR_PEDIDOS = this.page.locator("//button[normalize-space()='Nuevo Pedido']")
     }
 
-    async clickMenuCrearPedidos(): Promise<void> {
+    async clickNuevoPedidos(): Promise<void> {
         await this.click(this.CREAR_PEDIDOS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
         await this.page.waitForTimeout(3000)
     }
 
-    async navigateToMenuCrearPedidos(): Promise<void> {
-        await this.clickMenuCrearPedidos()
+    async navigateToMenuNuevoPedidos(): Promise<void> {
+        await this.clickNuevoPedidos()
     }
 }

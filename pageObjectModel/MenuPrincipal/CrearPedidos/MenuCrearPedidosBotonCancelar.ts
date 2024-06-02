@@ -19,7 +19,6 @@ export class MenuCrearPedidosBotonCancelar extends BasePage {
         await this.click(this.BOTON_CANCELAR)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuCrearPedidosBotonCancelar(): Promise<void> {
