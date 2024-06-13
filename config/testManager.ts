@@ -286,6 +286,7 @@ import {
 import {
     MCPCategorySectionButtonsYerba
 } from '../pageObjectModel/MenuPrincipal/CrearPedidos/SectionButtons/Categorias/SectionButtons/MCPCategorySectionButtonsYerba'
+import { PedidosBotonMostrarMas } from '../pageObjectModel/MenuPrincipal/CrearPedidos/PedidosBotonMostrarMas'
 
 
 const environment = process.env.TEST || 'qa'
@@ -395,6 +396,7 @@ const test = baseTest.extend<{
     mCPCategorySectionButtonsToallitasHumedas:MCPCategorySectionButtonsToallitasHumedas
     mCPCategorySectionButtonsVinos:MCPCategorySectionButtonsVinos
     mCPCategorySectionButtonsYerba: MCPCategorySectionButtonsYerba
+    pedidosBotonMostrarMas: PedidosBotonMostrarMas
 
 }>({
     loginPage: async ({ page, context }, use) => {
@@ -709,6 +711,10 @@ const test = baseTest.extend<{
     menuCrearPedidosBotonCancelar: async ({ page, context }, use) => {
         await use(new MenuCrearPedidosBotonCancelar(page, context, environment))
     },
+    pedidosBotonMostrarMas: async ({ page, context }, use) => {
+        await use(new PedidosBotonMostrarMas(page, context, environment))
+    },
+
 
 
 

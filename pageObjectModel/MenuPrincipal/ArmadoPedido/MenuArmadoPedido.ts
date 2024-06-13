@@ -12,7 +12,7 @@ export class MenuArmadoPedido extends BasePage {
         super(page, context)
         this.env = loadEnvironmentConfig(environment)
 
-        this.ARMADO_PEDIDO = this.page.locator("((//div[@onclick=\"gotoPage('orders')\"])[1]")
+        this.ARMADO_PEDIDO = this.page.locator("(//div[@onclick=\"gotoPage('orders')\"])[1]")
     }
 
     async clickMenuArmadoPedido(): Promise<void> {
