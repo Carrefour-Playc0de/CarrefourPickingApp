@@ -17,26 +17,29 @@ export class PedidosBotonMostrarMas extends BasePage {
 
     async clickPedidosBotonMostrarMas(): Promise<void> {
 
-        const botonMostarMas = await this.page.$("//*[@id='btn_getMore']")
-        const statusProgress = await this.page.$("(//span[@class='status_progress' and @style='width: 0px;'])[1]")
+        for(let i=0; i<=210; i++){
 
-        if(botonMostarMas && !statusProgress) {
-            while (true) {
-                if (!statusProgress) {
-                    await this.click(this.BOTON_MOSTRAR_MAS)
-                    await this.page.waitForLoadState("domcontentloaded")
-                    await this.page.waitForFunction(() => document.readyState === 'complete')
-                } else {
-                    break
-                }
+            const isBtnMostrarMasVisible = await this.page.$eval("//*[@id='btn_getMore']", button => {
+                return window.getComputedStyle(button).display !== 'none';
+            })
+
+            if (isBtnMostrarMasVisible === true){
+                await this.click(this.BOTON_MOSTRAR_MAS)
+                await this.page.waitForLoadState("domcontentloaded")
+                await this.page.waitForFunction(() => document.readyState === 'complete')
+                await this.page.waitForTimeout(500)
+                console.log('botonMostarMas = ' + isBtnMostrarMasVisible)
+            }else{
+                console.log('botonMostarMas (Break) = ' + isBtnMostrarMasVisible)
+                break
             }
         }
+
         const alts = await this.page.$$eval('img[src="https://tupedido.carrefour.com.ar/imagenesPDA/noimage-svg.svg"]', imgs =>
             imgs.map(
                 img => img.getAttribute('alt')
             )
         )
-        // Enlatados y Conservas (144)
     }
 
     async navigateToMenuNuevoPedidosBotonMostrarMas(): Promise<void> {
